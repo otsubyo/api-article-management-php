@@ -1,0 +1,4 @@
+# Demander de l'aide pour le .htaccess à l'enseignant la semaine prochaine !!
+RewriteEngine On
+RewriteRule ^articles_api/(.*)$ api-article-management/controller/server-api.php?id=$1 [L]
+RewriteRule ^articles_api/?$ api-article-management/controller/server-api.php [L,QSA]
